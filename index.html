@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Master Chef Digital 7mo. Liceo 23: Recetas con Scratch</title>
+        <link rel="stylesheet"  href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1> Master Chef Digital: Recetas con Scratch</h1>
+            <p> Un Objeto de Aprendizaje</p>
+            <img src="imagenes/chefprogramador.jpeg" alt="Chef programadores" width="250" height="180">
+
+        </header>
+        <section>
+            <h2> Objetivo</h2>
+            <p> Las actividades propuestas nos permitirán aprender estructuras secuenciales y condicionales en programación creando una receta estructurada en <b>Scratch</b>.</p>
+                <div class="narrativa">
+                    <h2> Consigna</h2>
+                    <p>
+                        ¡Bienvenidos al concurso <b>Master Chef Digital</b>, cada equipo será un grupo de <b>Chef Programadores</b> y tendrán la misión de transformar una receta en un <b>algoritmo animado</b>
+                    </p>
+                </div> 
+            <h2> Desafío en Scratch</h2>
+            <p>Cada grupo tendrá que elegir una receta fácil: por ejemplo hacer una tostada, o limonada, o un té, o preparara un sandwitch, y programarlo en Scratch</p>
+            <ul>
+                <li>Incluir los pasos de la receta como <b>secuencia</b>.</li>
+                <li>Agregar al menos una condición "SI": si hay azúcar agregar; sino servir sin azúcar.</li>
+                <li>Usar sprites para representar ingredientes</li>
+                <li>Hacer que sea muy divertido y poner en juego la creatividad</li>
+            </ul>
+            <h2>Criterios de Gamificación</h2>
+            <ul>
+                <li>Claridad de la secuencia + 2 puntos.</li>
+                <li>Utilización de condicional SI + 3 puntos.</li>
+                <li>Creatividad y Diseño + 3 puntos.</li>
+                <li>Trabajo en equipo + 2 puntos.</li>
+            </ul>
+            <P>Las mejores recetas ganaran <b>Medallas Digitales</b>. Espero entren en el Podio</P>
+            <img src="imagenes/medallas.jpg" alt="Medallas de los tres primeros premios" width="200" height="150">
+
+            <h2>Ejemplo</h2>
+            <!--Insertar acá ejemplo de scratch-->
+        <iframe src="https://scratch.mit.edu/projects/1209094507/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>                
+                <h2>Mira como preparamos una limonada con JavaScript</h2>
+            <p>Pulsa el botón para ver los pasos de la receta:</p>
+                <button onclick="mostrarReceta()">Ver receta</button>
+                <p id="receta"></p>
+                <p>Decide: ¿Quieres azúcar en tu limonada?</p>
+                <button onclick="agregarAzucar(true)">Sí</button>
+                <button onclick="agregarAzucar(false)">No</button>
+                <p id="resultado"></p>
+        </section>
+        <section>
+            <h2>Comparte del Proyecto</h2>
+            <p>Pega aquí el enlace a tu proyecto de Scratch:</p>
+            <input type="text" id="enlaceScratch" placeholder="https://scratch.mit.edu/projects/...">
+            <button onclick="enviarEnlace()">Enviar</button>
+            <p id="mensaje"></p>
+        </section>
+        <section>
+            <button onclick="felicitar()">Finalizar receta</button>
+            <p id="felicitacion"></p>
+        </section>
+        <footer> OA by Iris Da Luz Trabajo Finl de  Ciencias de la Computación para 7mo EBI Año 2025</footer>
+        <script src="scripts.js"></script>
+    </body>
+</html>
